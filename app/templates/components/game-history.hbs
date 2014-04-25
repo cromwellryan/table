@@ -27,6 +27,9 @@
 {{#link-to 'person' away}}{{away.name}}{{/link-to}}
     </span>
   </span> 
+  <span class="game--actions">
+    <button {{action removeGame this}} class="button grey button">Delete</button>
+  </span>
   <span class="game--date">
     {{date}}
   </span>

@@ -1,5 +1,8 @@
 module.exports = App.CompletedGamesController = Ember.ArrayController.extend
   needs: ['game']
+  actions:
+    removeGame: (game) ->
+      game.delete()
   games: (->
     @get('content').map((game) ->
       hs = game.get('homeScore')
